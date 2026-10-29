@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Official sample website of the Department of Computer Science and Engineering.">
+  <title>Department of Computer Science and Engineering</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <header class="site-header">
+    <img src="logo.svg" alt="CSE Department logo" width="90" height="90">
+    <div>
+      <h1>Department of Computer Science and Engineering</h1>
+      <p class="tagline"><em>Learn. Build. Innovate.</em></p>
+    </div>
+  </header>
+
+  <!-- ========== NAVIGATION ========== -->
+  <nav class="site-nav" aria-label="Main navigation">
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#programmes">Programmes</a></li>
+      <li><a href="#faculty">Faculty</a></li>
+      <li><a href="#facilities">Facilities</a></li>
+      <li><a href="#enquiry">Enquiry</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- ========== MAIN CONTENT ========== -->
+  <main>
+
+    <section id="about">
+      <h2>About the Department</h2>
+      <p>
+        The Department of <strong>Computer Science and Engineering</strong> prepares students
+        for careers in software development, data science, cybersecurity and research.
+        The curriculum balances <em>strong theoretical foundations</em> with
+        <mark>hands-on laboratory and project work</mark>.
+      </p>
+      <p>
+        Our vision is to produce graduates who are technically skilled, ethically grounded
+        and ready to solve real-world problems. H<sub>2</sub>O may not be our subject,
+        but x<sup>2</sup> + y<sup>2</sup> = z<sup>2</sup> certainly appears in our algorithms classes!
+      </p>
+      <blockquote>
+        "Programs must be written for people to read, and only incidentally for machines to execute."
+        <br><small>&mdash; Harold Abelson</small>
+      </blockquote>
+      <hr>
+    </section>
+
+    <section id="programmes">
+      <h2>Academic Programmes</h2>
+      <article>
+        <h3>B.Tech in Computer Science and Engineering</h3>
+        <p>A four-year undergraduate programme. Some of the subjects offered are:</p>
+        <ol>
+          <li>Data Structures and Algorithms</li>
+          <li>Database Management Systems</li>
+          <li>Operating Systems</li>
+          <li>Computer Networks</li>
+          <li>Machine Learning</li>
+          <li>Web Technologies</li>
+        </ol>
+      </article>
+      <article>
+        <h3>Areas of Study</h3>
+        <ul>
+          <li>Artificial Intelligence and Data Science</li>
+          <li>Cyber Security</li>
+          <li>Cloud and Distributed Computing</li>
+          <li>Software Engineering</li>
+        </ul>
+      </article>
+    </section>
+
+    <section id="faculty">
+      <h2>Our Faculty</h2>
+      <p class="note">Names below are sample data used for demonstration only.</p>
+      <table>
+        <caption>Faculty members of the department</caption>
+        <thead>
+          <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Designation</th>
+            <th scope="col">Area of Specialization</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Dr. Meera Nair</td><td>Professor &amp; Head of Department</td><td>Machine Learning</td></tr>
+          <tr><td>Dr. Arun Varghese</td><td>Associate Professor</td><td>Computer Networks</td></tr>
+          <tr><td>Prof. Sreelakshmi K.</td><td>Assistant Professor</td><td>Database Systems</td></tr>
+          <tr><td>Prof. Rahul Menon</td><td>Assistant Professor</td><td>Cyber Security</td></tr>
+          <tr><td>Prof. Anjali Thomas</td><td>Assistant Professor</td><td>Web Technologies</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="facilities">
+      <h2>Facilities</h2>
+      <ul>
+        <li><strong>Programming Lab:</strong> 60 networked workstations with current development tools.</li>
+        <li><strong>Networks &amp; Security Lab:</strong> Routers, switches and penetration-testing set-ups.</li>
+        <li><strong>AI &amp; Data Science Lab:</strong> GPU-enabled systems for model training.</li>
+        <li><strong>Department Library:</strong> Reference books, journals and project reports.</li>
+      </ul>
+      <p>
+        Useful links:
+        <a href="https://fisat.ac.in" target="_blank" rel="noopener noreferrer">College website</a> |
+        <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML" target="_blank" rel="noopener noreferrer">Learn HTML (MDN)</a> |
+        <a href="https://www.w3schools.com/html/" target="_blank" rel="noopener noreferrer">W3Schools HTML</a>
+      </p>
+    </section>
+
+    <section id="enquiry">
+      <h2>Student Enquiry Form</h2>
+      <form action="#" method="post">
+        <p>
+          <label for="name">Full Name</label><br>
+          <input type="text" id="name" name="name" placeholder="Your full name" required>
+        </p>
+        <p>
+          <label for="email">Email</label><br>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required>
+        </p>
+        <p>
+          <label for="phone">Phone Number</label><br>
+          <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="10-digit mobile number" required>
+        </p>
+        <p>
+          <label for="course">Course Preference</label><br>
+          <select id="course" name="course" required>
+            <option value="">-- Select a course --</option>
+            <option value="btech-cse">B.Tech Computer Science and Engineering</option>
+            <option value="btech-cse-ai">B.Tech CSE (AI &amp; Data Science)</option>
+            <option value="mtech-cse">M.Tech Computer Science</option>
+          </select>
+        </p>
+        <p>
+          <label for="message">Message (optional)</label><br>
+          <textarea id="message" name="message" rows="3" cols="40"></textarea>
+        </p>
+        <p><button type="submit">Submit Enquiry</button></p>
+      </form>
+    </section>
+
+  </main>
+
+  <!-- ========== FOOTER / CONTACT ========== -->
+  <footer id="contact" class="site-footer">
+    <h2>Contact Us</h2>
+    <address>
+      Department of Computer Science and Engineering<br>
+      Federal Institute of Science and Technology (FISAT)<br>
+      Angamaly, Ernakulam, Kerala<br>
+      Email: <a href="mailto:cse@fisat.edu">cse@example.edu</a> (sample)<br>
+      Phone: +91 9xx1230010(sample)
+    </address>
+    <p><small>&copy; 2026 Department of CSE. All rights reserved.</small></p>
+  </footer>
+
+</body>
+</html>
